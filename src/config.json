@@ -19,9 +19,8 @@
         "accept-language",
         "cookie"
     ],
-    "platform": {
-        "youtube": "youtube",
-        "other": "other"
+    "platforms": {
+        "youtube": "https://www.youtube.com/watch?v=$"
     },
     "req_attr": {
         "track_code": "t_code",
