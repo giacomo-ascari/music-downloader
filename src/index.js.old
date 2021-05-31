@@ -1,0 +1,108 @@
+const ytdl = require('ytdl-core')
+const ffmpeg = require('fluent-ffmpeg')
+const progress = require('ffmpeg-on-progress')
+const fs = require('fs');
+const { downloadFromInfo } = require('ytdl-core');
+
+config = {
+    source:"tracks.txt",
+    folder:"./tracks",
+    format:"mp3",
+    spec_ffmpeg: true,
+    ffmpeg:"C:/FFmpeg/bin/ffmpeg.exe"
+}
+
+async function  download(url) {
+    console.log(url)
+    let info = await ytdl.getBasicInfo(url);
+    console.log(info.videoDetails.media.song)
+    console.log(info.videoDetails.media.artist)
+    await ytdl(url).pipe(fs.createWriteStream(`${url.split("v=")[1]}.mp4`));
+    await new Promise(resolve => setTimeout(resolve, 5000));
+    console.log(url.split("v=")[1])
+
+}
+
+let data = fs.readFileSync(config.source, 'utf8');
+let lines = data.split("\n");
+console.log(lines);
+
+lines.forEach(line => download(line) )
+
+
+    /*let path = `${config.folder}/${code}.${config.format}`;
+    if (!fs.existsSync(config.folder)) fs.mkdirSync(config.folder)
+
+
+
+    let stream = ytdl(url);
+    let proc = ffmpeg({source: stream});
+    if (config.spec_ffmpeg)
+        proc.setFfmpegPath(config.ffmpeg);
+
+    proc.on("error", (err) => { throw new Error(err); });
+    proc.on("progress", (prog) => { log("track", JSON.stringify(prog), "b"); });
+    proc.on("end", () => { res.sendFile(path, {root: "./"}); });
+    proc.saveToFile(path);*/
+
+
+/*
+let code = "TUVcZfQe-Kw"
+let url = `https://www.youtube.com/watch?v=${code}`;
+let path = `${config.folder}/${code}.${config.format}`;
+if (!fs.existsSync(config.folder)) fs.mkdirSync(config.folder)
+
+let stream = ytdl(url);
+let proc = ffmpeg({source: stream});
+if (config.spec_ffmpeg)
+    proc.setFfmpegPath(config.ffmpeg);
+
+proc.on("error", (err) => { throw new Error(err); });
+proc.on("progress", (prog) => { log("track", JSON.stringify(prog), "b"); });
+proc.on("end", () => { res.sendFile(path, {root: "./"}); });
+proc.saveToFile(path);
+*/
+
+
+/*
+
+// GET track
+router.get("/track", async (req: express.Request, res: express.Response) => {
+    try {
+        let platform = query_get(req, config.req_attr.track_platform);
+        let code = query_get(req, config.req_attr.track_code);
+        log("track", `platform: ${platform}`, "d");
+        log("track", `code: ${code}`, "d");
+        if (platform && code) {
+            let url = "";
+            if (platform == config.platform.youtube) {
+                url = `https://www.youtube.com/watch?v=${code}`;
+            } else {
+                throw new Error();
+            }
+            log("track", `url: ${url}`, "d");
+            let prefix = `${platform}=`;
+            let path = `${config.tracks.folder}/${prefix}${code}.${config.tracks.format}`;
+            if (fs.existsSync(path)) {
+                log("track", "file exists", "b");
+                res.sendFile(path, {root: "./"});
+            } else {
+                if (!fs.existsSync(config.tracks.folder)) fs.mkdirSync(config.tracks.folder)
+                let stream = ytdl(url);
+                let proc = ffmpeg({source: stream});
+                if (config.tracks.spec_ffmpeg) {
+                    proc.setFfmpegPath(config.tracks.ffmpeg);
+                }
+                proc.on("error", (err) => { throw new Error(err); });
+                proc.on("progress", (prog) => { log("track", JSON.stringify(prog), "b"); });
+                proc.on("end", () => { res.sendFile(path, {root: "./"}); });
+                proc.saveToFile(path);
+            }
+        } else {
+            res_error(res, errors.generic);
+        }
+    } catch (exc) {
+        res_error(res, errors.generic);
+    }
+});
+*/

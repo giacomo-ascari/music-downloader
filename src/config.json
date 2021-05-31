@@ -1,0 +1,39 @@
+{
+    "base_url": "/music-downloader",
+    "port":3001,
+    "workers_default":2,
+    "workers_from_cores": false,
+    "ignorable_headers": [
+        "user-agent",
+        "accept",
+        "postman-token",
+        "host",
+        "accept-encoding",
+        "connection",
+        "content-length",
+        "cache-control",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "upgrade-insecure-requests",
+        "sec-fetch-site",
+        "sec-fetch-mode",
+        "sec-fetch-user",
+        "sec-fetch-dest",
+        "accept-language",
+        "cookie"
+    ],
+    "platform": {
+        "youtube": "youtube",
+        "other": "other"
+    },
+    "req_attr": {
+        "track_code": "t_code",
+        "track_platform": "t_plat"
+    },
+    "tracks": {
+        "folder":"./tracks",
+        "format":"mp3",
+        "spec_ffmpeg": true,
+        "ffmpeg":"C:/FFmpeg/bin/ffmpeg.exe"
+    }
+}
