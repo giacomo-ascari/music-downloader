@@ -13,9 +13,7 @@ BASE_URL="/music-downloader"
 PORT=XXXX
 WORKERS_DEFAULT=XXXX
 WORKER_FROM_CORES="XXXX"
-SPEC_FFMPEG="XXXX"
-FFMPEG="C:/..."
-SIZE=XXXXX
+SIZE_MB=XXXXX
 */
 
 async function main() {

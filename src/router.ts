@@ -7,8 +7,8 @@ import express, { response } from "express";
 import cors from 'cors';
 
 import ytdl from "ytdl-core";
-import ffmpeg from "fluent-ffmpeg";
 import fs, { stat } from  'fs';
+import { Readable } from "stream";
 
 // ROUTING STUFF
 let router: express.Router = express.Router();
@@ -28,10 +28,9 @@ function header_get (req: express.Request, field: string) {
 
 let gc: NodeJS.Timeout;
 function removeOldTracks() {
-    log("gc", `starting`, "d");
     let files = fs.readdirSync(config.tracks.folder);
     let total = 0;
-    let max_size = process.env.SIZE as unknown as number;
+    let max_size = (process.env.SIZE_MB as unknown as number) * 1000000;
     files.sort((x, y) => {
         let x_stats = fs.statSync(`${config.tracks.folder}/${x}`).mtime;
         let y_stats = fs.statSync(`${config.tracks.folder}/${y}`).mtime;
@@ -43,9 +42,7 @@ function removeOldTracks() {
         total -= fs.statSync(`${config.tracks.folder}/${file}`).size;
         fs.rmSync(`${config.tracks.folder}/${file}`);
         log("gc", `${file} deleted`, "d");
-    }
-    log("gc", `${total} B out of ${max_size} B`, "d");
-    
+    }    
 }
 
 // WELCOMING REQUEST
@@ -132,15 +129,22 @@ router.get("/track", async (req: express.Request, res: express.Response) => {
             let path = getPath(platform, code);
             if (!fs.existsSync(path)) {
                 if (!fs.existsSync(config.tracks.folder)) fs.mkdirSync(config.tracks.folder)
-                ytdl(url, {filter: "audioonly"}).pipe(fs.createWriteStream(path));
+                log("track", `starting download`, "d");
+                ytdl(url, {filter: "audioonly"}).pipe(fs.createWriteStream(path)).on("finish", () => {
+                    log("track", `ending download and sending`, "d");
+                    res.sendFile(path, {root: "./"}, (err) => {
+                        log("track", `sent`, "d");
+                        gc = setTimeout(removeOldTracks, 5000);
+                    });
+                });
+            } else {
+                log("track", `sending file`, "d");
+                res.sendFile(path, {root: "./"}, (err) => {
+                    log("track", `sent`, "d");
+                    gc = setTimeout(removeOldTracks, 5000);
+                });
+                
             }
-
-            res.sendFile(path, {root: "./"}, (err) => {
-                if (err) log("track", `${err}`, "e");
-            });
-
-            gc = setTimeout(removeOldTracks, 5000);
-
         } else {
             res.status(500).send("Unsupported platform");
         }

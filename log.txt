@@ -940,3 +940,237 @@
 [GC] starting
 [GC] youtube=BhMC23ll2Rk.mp3 deleted
 [GC] 2691975 B out of 5000000 B
+[MASTER] time: Mon May 31 2021 16:10:09 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 27476
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 10504 forked
+[MASTER] worker pid 17196 forked
+[MASTER] worker count: 2
+[WORKER] GET /music-downloader/info?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T14:10:10.149Z
+	WPID: 17196
+	HEADER: if-none-match:W/"511ff-fUOqaSXfn/OeO4a9i02XFlUoWDI"
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T14:10:19.248Z
+	WPID: 17196
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T14:10:19.272Z
+	WPID: 17196
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	HEADER: range:bytes=0-
+	HEADER: if-none-match:W/"0-179c2c2d5f2"
+	HEADER: if-modified-since:Mon, 31 May 2021 14:10:19 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[GC] starting
+[GC] 6333475 B out of 50000000 B
+[MASTER] time: Mon May 31 2021 16:11:22 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 4868
+[MASTER] worker pid 29304 forked
+[MASTER] worker pid 3864 forked
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker count: 2
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T14:11:52.742Z
+	WPID: 3864
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[GC] starting
+[GC] 6333475 B out of NaN B
+[MASTER] time: Mon May 31 2021 16:12:22 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 11804
+[MASTER] worker count: 2
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 7072 forked
+[MASTER] worker pid 29616 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T14:12:25.562Z
+	WPID: 29616
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[GC] starting
+[GC] youtube=Dwzk-XZxZ4k.mp3 deleted
+[GC] 0 B out of 1000000 B
+[GC] youtube=BhMC23ll2Rk.mp3 deleted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T14:12:34.502Z
+	WPID: 29616
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[GC] starting
+[GC] youtube=BhMC23ll2Rk.mp3 deleted
+[GC] 0 B out of 1000000 B
+[MASTER] time: Mon May 31 2021 16:15:25 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 2480
+[MASTER] worker count: 2
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 6484 forked
+[MASTER] worker pid 20744 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T14:15:28.524Z
+	WPID: 6484
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] starting download
+[TRACK] ending download
+[TRACK] sending file
+[TRACK] sent
+[GC] youtube=BhMC23ll2Rk.mp3 deleted
+[MASTER] time: Mon May 31 2021 16:16:05 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 22300
+[MASTER] worker count: 2
+[MASTER] worker pid 6804 forked
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 23952 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T14:16:06.631Z
+	WPID: 23952
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] starting download
+[TRACK] ending download
+[TRACK] sending file
+[TRACK] sent
+[GC] youtube=BhMC23ll2Rk.mp3 deleted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=L_LUpnjgPso
+	FROM: ::1 | TIME: 2021-05-31T14:17:05.113Z
+	WPID: 23952
+	QUERY: {"t_plat":"youtube","t_code":"L_LUpnjgPso"}
+	BODY: {}
+[TRACK] starting download
+[TRACK] ending download
+[TRACK] sending file
+[TRACK] sent
+[GC] youtube=L_LUpnjgPso.mp3 deleted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=L_LUpnjgPso
+	FROM: ::1 | TIME: 2021-05-31T14:17:57.586Z
+	WPID: 23952
+	QUERY: {"t_plat":"youtube","t_code":"L_LUpnjgPso"}
+	BODY: {}
+[TRACK] starting download
+[TRACK] ending download
+[TRACK] sending file
+[TRACK] sent
+[TRACK] Error: EPERM: operation not permitted, stat 'C:\Users\giaco\Desktop\music-downloader\tracks\youtube=L_LUpnjgPso.mp3'
+[MASTER] worker pid 23952 exited
+[MASTER] worker pid 17424 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=L_LUpnjgPso
+	FROM: ::1 | TIME: 2021-05-31T14:18:10.921Z
+	WPID: 17424
+	QUERY: {"t_plat":"youtube","t_code":"L_LUpnjgPso"}
+	BODY: {}
+[TRACK] starting download
+[TRACK] ending download
+[TRACK] sending file
+[TRACK] sent
+[GC] youtube=L_LUpnjgPso.mp3 deleted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=L_LUpnjgPso
+	FROM: ::1 | TIME: 2021-05-31T14:18:44.920Z
+	WPID: 17424
+	QUERY: {"t_plat":"youtube","t_code":"L_LUpnjgPso"}
+	BODY: {}
+[TRACK] starting download
+[TRACK] ending download
+[TRACK] sending file
+[TRACK] sent
+[TRACK] Error: EPERM: operation not permitted, stat 'C:\Users\giaco\Desktop\music-downloader\tracks\youtube=L_LUpnjgPso.mp3'
+[MASTER] worker pid 17424 exited
+[MASTER] worker pid 7940 forked
+[MASTER] time: Mon May 31 2021 16:41:18 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 6624
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker count: 2
+[MASTER] worker pid 3164 forked
+[MASTER] worker pid 17232 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=L_LUpnjgPso
+	FROM: ::1 | TIME: 2021-05-31T14:41:21.665Z
+	WPID: 17232
+	QUERY: {"t_plat":"youtube","t_code":"L_LUpnjgPso"}
+	BODY: {}
+[TRACK] starting download
+[TRACK] ending download
+[TRACK] sending file
+[TRACK] sent
+[TRACK] Error: ENOENT: no such file or directory, stat 'C:\Users\giaco\Desktop\music-downloader\tracks\youtube=L_LUpnjgPso.mp3'
+[MASTER] time: Mon May 31 2021 16:41:35 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 2956
+[MASTER] worker count: 2
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 19824 forked
+[MASTER] worker pid 9832 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=L_LUpnjgPso
+	FROM: ::1 | TIME: 2021-05-31T14:41:37.144Z
+	WPID: 9832
+	QUERY: {"t_plat":"youtube","t_code":"L_LUpnjgPso"}
+	BODY: {}
+[TRACK] starting download
+[TRACK] sending file
+[TRACK] ending download
+[TRACK] sent
+[GC] youtube=L_LUpnjgPso.mp3 deleted
+[MASTER] time: Mon May 31 2021 16:47:52 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 21628
+[MASTER] worker count: 2
+[MASTER] worker pid 25748 forked
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 16012 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=L_LUpnjgPso
+	FROM: ::1 | TIME: 2021-05-31T14:47:56.829Z
+	WPID: 16012
+	QUERY: {"t_plat":"youtube","t_code":"L_LUpnjgPso"}
+	BODY: {}
+[TRACK] starting download
+[MASTER] time: Mon May 31 2021 16:48:44 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 27972
+[MASTER] worker count: 2
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 29112 forked
+[MASTER] worker pid 14504 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=L_LUpnjgPso
+	FROM: ::1 | TIME: 2021-05-31T14:48:48.186Z
+	WPID: 14504
+	QUERY: {"t_plat":"youtube","t_code":"L_LUpnjgPso"}
+	BODY: {}
+[TRACK] sending file
+[TRACK] sent
+[GC] youtube=L_LUpnjgPso.mp3 deleted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=L_LUpnjgPso
+	FROM: ::1 | TIME: 2021-05-31T14:49:01.778Z
+	WPID: 14504
+	QUERY: {"t_plat":"youtube","t_code":"L_LUpnjgPso"}
+	BODY: {}
+[TRACK] starting download
+[MASTER] time: Mon May 31 2021 16:49:44 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 3168
+[MASTER] worker count: 2
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 6140 forked
+[MASTER] worker pid 1136 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=wXaLvLd8wJI
+	FROM: ::1 | TIME: 2021-05-31T14:49:45.813Z
+	WPID: 6140
+	QUERY: {"t_plat":"youtube","t_code":"wXaLvLd8wJI"}
+	BODY: {}
+[TRACK] starting download
+[TRACK] ending download and sending
+[GC] youtube=L_LUpnjgPso.mp3 deleted
+[GC] youtube=wXaLvLd8wJI.mp3 deleted
+[MASTER] time: Mon May 31 2021 16:50:54 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] worker count: 2
+[MASTER] worker pid 20320 forked
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] pid: 28272
+[MASTER] worker pid 14984 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=wXaLvLd8wJI
+	FROM: ::1 | TIME: 2021-05-31T14:50:58.288Z
+	WPID: 14984
+	QUERY: {"t_plat":"youtube","t_code":"wXaLvLd8wJI"}
+	BODY: {}
+[TRACK] starting download
+[TRACK] ending download and sending
+[TRACK] sent
+[GC] youtube=wXaLvLd8wJI.mp3 deleted
