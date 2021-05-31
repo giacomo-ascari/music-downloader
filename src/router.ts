@@ -7,6 +7,7 @@ import express, { response } from "express";
 import cors from 'cors';
 
 import ytdl from "ytdl-core";
+import ytpl from "ytpl";
 import fs, { stat } from  'fs';
 import { Readable } from "stream";
 
@@ -82,6 +83,28 @@ function getPath(platform: string, code: string) {
     return path;
 }
 
+//http://localhost:3001/music-downloader/info-pl?t_plat=youtube&t_code=UU_aEa8K-EOJ3D6gOs7HcyNg
+router.get("/info-pl", async (req: express.Request, res: express.Response) => {
+    try {
+        let platform = query_get(req, config.req_attr.track_platform);
+        let code = query_get(req, config.req_attr.track_code);
+        if (platform && code) {
+            
+            let playlist;
+            if (platform == config.platform.youtube) {
+                playlist = await ytpl(code);
+            } else {
+                throw new Error();
+            }
+            res.json(playlist);
+
+        } else {
+            res.status(500).send("Unsupported platform");
+        }
+    } catch (exc) {
+        res.status(500).send("Generic exception OR Unsupported platform");
+    }
+});
 
 //http://localhost:3001/music-downloader/info?t_plat=youtube&t_code=BhMC23ll2Rk
 router.get("/info", async (req: express.Request, res: express.Response) => {
@@ -104,7 +127,6 @@ router.get("/info", async (req: express.Request, res: express.Response) => {
             } else {
                 throw new Error();
             }
-
             res.json({raw, info});
 
         } else {
