@@ -1,0 +1,942 @@
+[MASTER] time: Mon May 31 2021 08:47:47 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 21136
+[MASTER] worker count: 2
+[MASTER] worker pid 24724 forked
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 3920 forked
+[MASTER] time: Mon May 31 2021 08:48:22 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 19336
+[MASTER] worker count: 2
+[MASTER] worker pid 24168 forked
+[MASTER] http://localhost:undefined/music-downloader
+[MASTER] worker pid 5980 forked
+[MASTER] [object Object]
+[MASTER] time: Mon May 31 2021 08:49:07 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] worker count: 2
+[MASTER] pid: 10020
+[MASTER] worker pid 26800 forked
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 12696 forked
+[MASTER] {"ALLUSERSPROFILE":"C:\\ProgramData","APPDATA":"C:\\Users\\giaco\\AppData\\Roaming","BESIEGE_GAME_ASSEMBLIES":"C:/Program Files (x86)/Steam/steamapps/common/Besiege/Besiege_Data\\Managed/","BESIEGE_UNITY_ASSEMBLIES":"C:/Program Files (x86)/Steam/steamapps/common/Besiege/Besiege_Data\\Managed/","CHROME_CRASHPAD_PIPE_NAME":"\\\\.\\pipe\\crashpad_17212_VSROUWVRHOBONWXE","COLORTERM":"truecolor","CommonProgramFiles":"C:\\Program Files\\Common Files","CommonProgramFiles(x86)":"C:\\Program Files (x86)\\Common Files","CommonProgramW6432":"C:\\Program Files\\Common Files","COMPUTERNAME":"FISSO-ASKY","ComSpec":"C:\\Windows\\system32\\cmd.exe","DriverData":"C:\\Windows\\System32\\Drivers\\DriverData","FPS_BROWSER_APP_PROFILE_STRING":"Internet Explorer","FPS_BROWSER_USER_PROFILE_STRING":"Default","GIT_ASKPASS":"c:\\Program Files\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh","HOME":"C:\\Users\\giaco","HOMEDRIVE":"C:","HOMEPATH":"\\Users\\giaco","INIT_CWD":"C:\\Users\\giaco\\Desktop\\music-downloader","LANG":"it_IT.UTF-8","LOCALAPPDATA":"C:\\Users\\giaco\\AppData\\Local","LOGONSERVER":"\\\\FISSO-ASKY","NODE":"C:\\Program Files\\nodejs\\node.exe","NODE_EXE":"C:\\Program Files\\nodejs\\\\node.exe","NPM_CLI_JS":"C:\\Program Files\\nodejs\\\\node_modules\\npm\\bin\\npm-cli.js","npm_config_access":"","npm_config_allow_same_version":"","npm_config_also":"","npm_config_always_auth":"","npm_config_argv":"{\"remain\":[],\"cooked\":[\"run\",\"start\"],\"original\":[\"run\",\"start\"]}","npm_config_audit":"true","npm_config_audit_level":"low","npm_config_auth_type":"legacy","npm_config_before":"","npm_config_bin_links":"true","npm_config_browser":"","npm_config_ca":"","npm_config_cache":"C:\\Users\\giaco\\AppData\\Roaming\\npm-cache","npm_config_cache_lock_retries":"10","npm_config_cache_lock_stale":"60000","npm_config_cache_lock_wait":"10000","npm_config_cache_max":"Infinity","npm_config_cache_min":"10","npm_config_cafile":"","npm_config_cert":"","npm_config_cidr":"","npm_config_color":"true","npm_config_commit_hooks":"true","npm_config_depth":"Infinity","npm_config_description":"true","npm_config_dev":"","npm_config_dry_run":"","npm_config_editor":"notepad.exe","npm_config_engine_strict":"","npm_config_fetch_retries":"2","npm_config_fetch_retry_factor":"10","npm_config_fetch_retry_maxtimeout":"60000","npm_config_fetch_retry_mintimeout":"10000","npm_config_force":"","npm_config_format_package_lock":"true","npm_config_fund":"true","npm_config_git":"git","npm_config_git_tag_version":"true","npm_config_global":"","npm_config_globalconfig":"C:\\Users\\giaco\\AppData\\Roaming\\npm\\etc\\npmrc","npm_config_globalignorefile":"C:\\Users\\giaco\\AppData\\Roaming\\npm\\etc\\npmignore","npm_config_global_style":"","npm_config_group":"","npm_config_ham_it_up":"","npm_config_heading":"npm","npm_config_https_proxy":"","npm_config_if_present":"","npm_config_ignore_prepublish":"","npm_config_ignore_scripts":"","npm_config_init_author_email":"","npm_config_init_author_name":"","npm_config_init_author_url":"","npm_config_init_license":"ISC","npm_config_init_module":"C:\\Users\\giaco\\.npm-init.js","npm_config_init_version":"1.0.0","npm_config_json":"","npm_config_key":"","npm_config_legacy_bundling":"","npm_config_link":"","npm_config_local_address":"","npm_config_loglevel":"notice","npm_config_logs_max":"10","npm_config_long":"","npm_config_maxsockets":"50","npm_config_message":"%s","npm_config_metrics_registry":"https://registry.npmjs.org/","npm_config_node_gyp":"C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js","npm_config_node_options":"","npm_config_node_version":"14.16.0","npm_config_noproxy":"","npm_config_offline":"","npm_config_onload_script":"","npm_config_only":"","npm_config_optional":"true","npm_config_otp":"","npm_config_package_lock":"true","npm_config_package_lock_only":"","npm_config_parseable":"","npm_config_prefer_offline":"","npm_config_prefer_online":"","npm_config_prefix":"C:\\Users\\giaco\\AppData\\Roaming\\npm","npm_config_preid":"","npm_config_production":"","npm_config_progress":"true","npm_config_proxy":"","npm_config_read_only":"","npm_config_rebuild_bundle":"true","npm_config_registry":"https://registry.npmjs.org/","npm_config_rollback":"true","npm_config_save":"true","npm_config_save_bundle":"","npm_config_save_dev":"","npm_config_save_exact":"","npm_config_save_optional":"","npm_config_save_prefix":"^","npm_config_save_prod":"","npm_config_scope":"","npm_config_scripts_prepend_node_path":"warn-only","npm_config_script_shell":"","npm_config_searchexclude":"","npm_config_searchlimit":"20","npm_config_searchopts":"","npm_config_searchstaleness":"900","npm_config_send_metrics":"","npm_config_shell":"C:\\Windows\\system32\\cmd.exe","npm_config_shrinkwrap":"true","npm_config_sign_git_commit":"","npm_config_sign_git_tag":"","npm_config_sso_poll_frequency":"500","npm_config_sso_type":"oauth","npm_config_strict_ssl":"true","npm_config_tag":"latest","npm_config_tag_version_prefix":"v","npm_config_timing":"","npm_config_tmp":"C:\\Users\\giaco\\AppData\\Local\\Temp","npm_config_umask":"0000","npm_config_unicode":"","npm_config_unsafe_perm":"true","npm_config_update_notifier":"true","npm_config_usage":"","npm_config_user":"","npm_config_userconfig":"C:\\Users\\giaco\\.npmrc","npm_config_user_agent":"npm/6.14.11 node/v14.16.0 win32 x64","npm_config_version":"","npm_config_versions":"","npm_config_viewer":"browser","npm_execpath":"C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js","npm_lifecycle_event":"start","npm_lifecycle_script":"node ./js/server.js","npm_node_execpath":"C:\\Program Files\\nodejs\\node.exe","npm_package_author":"","npm_package_dependencies_colorts":"^0.1.63","npm_package_dependencies_cors":"^2.8.5","npm_package_dependencies_dotenv":"^10.0.0","npm_package_dependencies_express":"^4.17.1","npm_package_dependencies_fluent_ffmpeg":"^2.1.2","npm_package_dependencies_ytdl_core":"^4.8.2","npm_package_description":"","npm_package_devDependencies_typescript":"^4.3.2","npm_package_devDependencies__types_cors":"^2.8.10","npm_package_devDependencies__types_dotenv":"^8.2.0","npm_package_devDependencies__types_express":"^4.17.12","npm_package_devDependencies__types_fluent_ffmpeg":"^2.1.17","npm_package_devDependencies__types_node":"^15.6.1","npm_package_gitHead":"f7d079c00766ffc58ae7e515c035d470641d440c","npm_package_license":"ISC","npm_package_main":"index.js","npm_package_name":"musicdownloader","npm_package_readmeFilename":"README.md","npm_package_scripts_serve":"npm run transpile && npm run start","npm_package_scripts_start":"node ./js/server.js","npm_package_scripts_transpile":"tsc","npm_package_scripts_tsc_init":"npx tsc --init","npm_package_version":"1.0.0","NPM_PREFIX_NPM_CLI_JS":"C:\\Users\\giaco\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js","NUMBER_OF_PROCESSORS":"16","OneDrive":"C:\\Users\\giaco\\OneDrive","ORIGINAL_XDG_CURRENT_DESKTOP":"undefined","OS":"Windows_NT","Path":"C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;C:\\Users\\giaco\\Desktop\\music-downloader\\node_modules\\.bin;C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\npm-lifecycle\\node-gyp-bin;C:\\Users\\giaco\\Desktop\\music-downloader\\node_modules\\.bin;C:\\ProgramData\\Anaconda3;C:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;C:\\ProgramData\\Anaconda3\\Library\\usr\\bin;C:\\ProgramData\\Anaconda3\\Library\\bin;C:\\ProgramData\\Anaconda3\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\nodejs\\;C:\\flutter\\bin\\;C:\\siege-windows;C:\\ffmpeg\\bin;C:\\Program Files\\PuTTY\\;C:\\GHDL\\0.37-mingw32-mcode\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\dotnet\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\giaco\\.cargo\\bin;C:\\Users\\giaco\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\giaco\\AppData\\Roaming\\npm","PATHEXT":".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL","PROCESSOR_ARCHITECTURE":"AMD64","PROCESSOR_IDENTIFIER":"Intel64 Family 6 Model 165 Stepping 5, GenuineIntel","PROCESSOR_LEVEL":"6","PROCESSOR_REVISION":"a505","ProgramData":"C:\\ProgramData","ProgramFiles":"C:\\Program Files","ProgramFiles(x86)":"C:\\Program Files (x86)","ProgramW6432":"C:\\Program Files","PROMPT":"$P$G","PSModulePath":"C:\\Users\\giaco\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules","PUBLIC":"C:\\Users\\Public","SESSIONNAME":"Console","SystemDrive":"C:","SystemRoot":"C:\\Windows","TEMP":"C:\\Users\\giaco\\AppData\\Local\\Temp","TERM_PROGRAM":"vscode","TERM_PROGRAM_VERSION":"1.56.2","TMP":"C:\\Users\\giaco\\AppData\\Local\\Temp","USERDOMAIN":"FISSO-ASKY","USERDOMAIN_ROAMINGPROFILE":"FISSO-ASKY","USERNAME":"giaco","USERPROFILE":"C:\\Users\\giaco","VBOX_MSI_INSTALL_PATH":"C:\\Program Files\\Oracle\\VirtualBox\\","VSCODE_GIT_ASKPASS_MAIN":"c:\\Program Files\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js","VSCODE_GIT_ASKPASS_NODE":"C:\\Program Files\\Microsoft VS Code\\Code.exe","VSCODE_GIT_IPC_HANDLE":"\\\\.\\pipe\\vscode-git-e95e174ab7-sock","windir":"C:\\Windows"}
+[MASTER] time: Mon May 31 2021 08:49:24 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 7380
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker count: 2
+[MASTER] worker pid 15840 forked
+[MASTER] worker pid 19328 forked
+[MASTER] undefined
+[MASTER] time: Mon May 31 2021 08:51:42 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] worker count: 2
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 26972 forked
+[MASTER] pid: 2968
+[MASTER] worker pid 24488 forked
+[MASTER] undefined
+[MASTER] time: Mon May 31 2021 08:51:53 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] worker count: 2
+[MASTER] pid: 27880
+[MASTER] worker pid 17308 forked
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 22924 forked
+[MASTER] 13
+[MASTER] time: Mon May 31 2021 08:52:12 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] worker count: 2
+[MASTER] pid: 5504
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 23352 forked
+[MASTER] worker pid 15944 forked
+[MASTER] env variable
+[MASTER] time: Mon May 31 2021 08:53:45 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 25520
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker count: 2
+[MASTER] worker pid 25952 forked
+[MASTER] worker pid 17636 forked
+[MASTER] time: Mon May 31 2021 09:04:17 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 12348
+[MASTER] worker count: 2
+[MASTER] worker pid 17268 forked
+[MASTER] worker pid 28752 forked
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] time: Mon May 31 2021 09:04:34 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 28892
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker count: 16
+[MASTER] worker pid 25256 forked
+[MASTER] worker pid 29128 forked
+[MASTER] worker pid 2732 forked
+[MASTER] worker pid 10420 forked
+[MASTER] worker pid 15960 forked
+[MASTER] worker pid 19452 forked
+[MASTER] worker pid 17112 forked
+[MASTER] worker pid 19092 forked
+[MASTER] worker pid 22568 forked
+[MASTER] worker pid 14916 forked
+[MASTER] worker pid 8712 forked
+[MASTER] worker pid 22652 forked
+[MASTER] worker pid 8920 forked
+[MASTER] worker pid 16912 forked
+[MASTER] worker pid 7628 forked
+[MASTER] worker pid 11320 forked
+[MASTER] time: Mon May 31 2021 09:09:03 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 17512
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker count: 2
+[MASTER] worker pid 13436 forked
+[MASTER] worker pid 13664 forked
+[WORKER] GET /music-downloader
+	FROM: ::1 | TIME: 2021-05-31T07:09:32.865Z
+	WPID: 13436
+	QUERY: {}
+	BODY: {}
+[WORKER] GET /music-downloader/info
+	FROM: ::1 | TIME: 2021-05-31T07:09:39.705Z
+	WPID: 13436
+	QUERY: {}
+	BODY: {}
+[TRACK] platform: undefined
+[TRACK] code: undefined
+[WORKER] GET /music-downloader/info?t_play=yt&t_code=
+	FROM: ::1 | TIME: 2021-05-31T07:09:56.462Z
+	WPID: 13436
+	QUERY: {"t_play":"yt","t_code":""}
+	BODY: {}
+[TRACK] platform: undefined
+[TRACK] code: 
+[WORKER] GET /music-downloader/info?t_play=youtube&t_code=aa
+	FROM: ::1 | TIME: 2021-05-31T07:10:11.181Z
+	WPID: 13436
+	QUERY: {"t_play":"youtube","t_code":"aa"}
+	BODY: {}
+[TRACK] platform: undefined
+[TRACK] code: aa
+[WORKER] GET /music-downloader/info?t_plat=youtube&t_code=aa
+	FROM: ::1 | TIME: 2021-05-31T07:10:19.021Z
+	WPID: 13436
+	QUERY: {"t_plat":"youtube","t_code":"aa"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: aa
+[TRACK] url: https://www.youtube.com/watch?v=aa
+[WORKER] GET /music-downloader/info?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:10:35.214Z
+	WPID: 13436
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: BhMC23ll2Rk
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[MASTER] time: Mon May 31 2021 09:14:40 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 26848
+[MASTER] worker count: 2
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 22880 forked
+[MASTER] worker pid 1300 forked
+[WORKER] GET /music-downloader/info?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:14:40.860Z
+	WPID: 22880
+	HEADER: if-none-match:W/"51a6a-628pyHj3UYZHYT/2CnhRWlLtaWs"
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: BhMC23ll2Rk
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[MASTER] time: Mon May 31 2021 09:21:30 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 14932 forked
+[MASTER] worker pid 11528 forked
+[MASTER] pid: 1972
+[MASTER] worker count: 2
+[WORKER] GET /music-downloader/info?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:21:32.368Z
+	WPID: 11528
+	HEADER: if-none-match:W/"513bd-9sBX0+nREJFpxnXjjyxXtDeyCqM"
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] code: BhMC23ll2Rk
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] platform: youtube
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:21:37.356Z
+	WPID: 11528
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] code: BhMC23ll2Rk
+[TRACK] platform: youtube
+[TRACK] {"frames":null,"currentFps":null,"currentKbps":105.2,"targetSize":512,"timemark":"00:00:39.86"}
+[TRACK] {"frames":null,"currentFps":null,"currentKbps":104,"targetSize":1024,"timemark":"00:01:20.64"}
+[TRACK] {"frames":null,"currentFps":null,"currentKbps":121,"targetSize":1792,"timemark":"00:02:01.31"}
+[TRACK] {"frames":null,"currentFps":null,"currentKbps":115.4,"targetSize":2304,"timemark":"00:02:43.57"}
+[TRACK] {"frames":null,"currentFps":null,"currentKbps":123.2,"targetSize":3072,"timemark":"00:03:24.33"}
+[TRACK] {"frames":null,"currentFps":null,"currentKbps":128,"targetSize":3265,"timemark":"00:03:28.92"}
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:21:41.170Z
+	WPID: 11528
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	HEADER: range:bytes=0-
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] code: BhMC23ll2Rk
+[TRACK] file exists
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:27:57.916Z
+	WPID: 11528
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] file exists
+[TRACK] code: BhMC23ll2Rk
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:27:57.936Z
+	WPID: 11528
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	HEADER: range:bytes=0-
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] file exists
+[TRACK] code: BhMC23ll2Rk
+[MASTER] time: Mon May 31 2021 09:30:14 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 8516
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 10428 forked
+[MASTER] worker pid 26012 forked
+[MASTER] worker count: 2
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:30:17.909Z
+	WPID: 10428
+	HEADER: range:bytes=0-1048575
+	HEADER: if-none-match:W/"3304f1-179c14cb813"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:21:41 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: BhMC23ll2Rk
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[MASTER] time: Mon May 31 2021 09:31:28 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 16600
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 10452 forked
+[MASTER] worker count: 2
+[MASTER] worker pid 10288 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::ffff:127.0.0.1 | TIME: 2021-05-31T07:31:28.323Z
+	WPID: 10288
+	HEADER: range:bytes=0-1048575
+	HEADER: if-none-match:W/"3304f1-179c14cb813"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:21:41 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] code: BhMC23ll2Rk
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::ffff:127.0.0.1 | TIME: 2021-05-31T07:31:28.337Z
+	WPID: 10452
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] code: BhMC23ll2Rk
+[TRACK] platform: youtube
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:31:28.382Z
+	WPID: 10452
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	HEADER: range:bytes=0-
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] code: BhMC23ll2Rk
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	FROM: ::1 | TIME: 2021-05-31T07:31:44.861Z
+	WPID: 10452
+	QUERY: {"t_plat":"youtube","t_code":"Dwzk-XZxZ4k"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: Dwzk-XZxZ4k
+[TRACK] url: https://www.youtube.com/watch?v=Dwzk-XZxZ4k
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	FROM: ::1 | TIME: 2021-05-31T07:31:44.898Z
+	WPID: 10452
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	HEADER: range:bytes=0-
+	HEADER: if-none-match:W/"0-179c155ee61"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:31:44 GMT
+	QUERY: {"t_plat":"youtube","t_code":"Dwzk-XZxZ4k"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: Dwzk-XZxZ4k
+[TRACK] url: https://www.youtube.com/watch?v=Dwzk-XZxZ4k
+[MASTER] time: Mon May 31 2021 09:32:23 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 6556
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker count: 2
+[MASTER] worker pid 17184 forked
+[MASTER] worker pid 7100 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	FROM: ::1 | TIME: 2021-05-31T07:32:25.983Z
+	WPID: 7100
+	HEADER: if-none-match:W/"0-179c155ee61"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:31:44 GMT
+	QUERY: {"t_plat":"youtube","t_code":"Dwzk-XZxZ4k"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: Dwzk-XZxZ4k
+[TRACK] done
+[TRACK] url: https://www.youtube.com/watch?v=Dwzk-XZxZ4k
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	FROM: ::1 | TIME: 2021-05-31T07:32:40.286Z
+	WPID: 7100
+	HEADER: if-none-match:W/"0-179c1568f06"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:32:25 GMT
+	QUERY: {"t_plat":"youtube","t_code":"Dwzk-XZxZ4k"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: Dwzk-XZxZ4k
+[TRACK] done
+[TRACK] url: https://www.youtube.com/watch?v=Dwzk-XZxZ4k
+[MASTER] time: Mon May 31 2021 09:33:55 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 4748
+[MASTER] worker count: 2
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 12312 forked
+[MASTER] worker pid 13840 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	FROM: ::ffff:127.0.0.1 | TIME: 2021-05-31T07:33:55.348Z
+	WPID: 13840
+	QUERY: {"t_plat":"youtube","t_code":"Dwzk-XZxZ4k"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: Dwzk-XZxZ4k
+[TRACK] done true
+[TRACK] url: https://www.youtube.com/watch?v=Dwzk-XZxZ4k
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	FROM: ::ffff:127.0.0.1 | TIME: 2021-05-31T07:33:55.386Z
+	WPID: 12312
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	HEADER: range:bytes=0-
+	QUERY: {"t_plat":"youtube","t_code":"Dwzk-XZxZ4k"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=Dwzk-XZxZ4k
+[TRACK] code: Dwzk-XZxZ4k
+[TRACK] done true
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	FROM: ::ffff:127.0.0.1 | TIME: 2021-05-31T07:34:04.683Z
+	WPID: 12312
+	HEADER: range:bytes=0-1048575
+	HEADER: if-none-match:W/"291387-179c1569673"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:32:27 GMT
+	QUERY: {"t_plat":"youtube","t_code":"Dwzk-XZxZ4k"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: Dwzk-XZxZ4k
+[TRACK] url: https://www.youtube.com/watch?v=Dwzk-XZxZ4k
+[TRACK] done true
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	FROM: ::ffff:127.0.0.1 | TIME: 2021-05-31T07:34:04.713Z
+	WPID: 12312
+	QUERY: {"t_plat":"youtube","t_code":"Dwzk-XZxZ4k"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=Dwzk-XZxZ4k
+[TRACK] code: Dwzk-XZxZ4k
+[TRACK] done true
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:34:18.857Z
+	WPID: 12312
+	HEADER: range:bytes=0-1048575
+	HEADER: if-none-match:W/"37909c-179c154a218"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:30:19 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: BhMC23ll2Rk
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] done true
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:34:18.867Z
+	WPID: 12312
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] code: BhMC23ll2Rk
+[TRACK] done true
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:34:18.891Z
+	WPID: 12312
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	HEADER: range:bytes=0-
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] done true
+[TRACK] code: BhMC23ll2Rk
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:34:38.682Z
+	WPID: 12312
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: BhMC23ll2Rk
+[TRACK] done true
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:34:38.698Z
+	WPID: 12312
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	HEADER: range:bytes=0-
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] platform: youtube
+[TRACK] done true
+[TRACK] code: BhMC23ll2Rk
+[MASTER] time: Mon May 31 2021 09:35:19 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 28140
+[MASTER] worker count: 2
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 12200 forked
+[MASTER] worker pid 6908 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:35:22.679Z
+	WPID: 6908
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: BhMC23ll2Rk
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] done true
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:35:22.724Z
+	WPID: 6908
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	HEADER: range:bytes=3145728-
+	HEADER: if-none-match:W/"0-179c159413e"
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: BhMC23ll2Rk
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] done true
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:35:24.914Z
+	WPID: 6908
+	HEADER: if-none-match:W/"0-179c159413e"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:35:22 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] code: BhMC23ll2Rk
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] done true
+[TRACK] platform: youtube
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:35:25.810Z
+	WPID: 6908
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] done true
+[TRACK] code: BhMC23ll2Rk
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:35:26.378Z
+	WPID: 6908
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=BhMC23ll2Rk
+[TRACK] code: BhMC23ll2Rk
+[TRACK] done true
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:35:42.753Z
+	WPID: 6908
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: F4neLJQC1_E
+[TRACK] done true
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:35:42.780Z
+	WPID: 6908
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	HEADER: range:bytes=0-
+	HEADER: if-none-match:W/"0-179c1598fa3"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:35:42 GMT
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[TRACK] done true
+[TRACK] code: F4neLJQC1_E
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:35:51.612Z
+	WPID: 6908
+	HEADER: if-none-match:W/"0-179c1598fa3"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:35:42 GMT
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: F4neLJQC1_E
+[TRACK] done true
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:35:56.787Z
+	WPID: 6908
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: F4neLJQC1_E
+[TRACK] done true
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:35:59.066Z
+	WPID: 6908
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: F4neLJQC1_E
+[TRACK] done true
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[MASTER] time: Mon May 31 2021 09:36:54 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 6212
+[MASTER] worker count: 2
+[MASTER] worker pid 15852 forked
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 27756 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:36:55.179Z
+	WPID: 27756
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: F4neLJQC1_E
+[TRACK] done true
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:36:55.216Z
+	WPID: 15852
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	HEADER: range:bytes=0-
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[TRACK] code: F4neLJQC1_E
+[TRACK] platform: youtube
+[TRACK] done true
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:37:08.771Z
+	WPID: 15852
+	HEADER: range:bytes=0-1048575
+	HEADER: if-none-match:W/"dc989b-179c1599fca"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:35:46 GMT
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: F4neLJQC1_E
+[TRACK] done true
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:37:08.803Z
+	WPID: 15852
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[TRACK] done true
+[TRACK] code: F4neLJQC1_E
+[TRACK] Error: Request aborted
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:37:08.824Z
+	WPID: 15852
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	HEADER: range:bytes=3145728-
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[TRACK] done true
+[TRACK] code: F4neLJQC1_E
+[MASTER] time: Mon May 31 2021 09:38:00 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 21024
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 9384 forked
+[MASTER] worker count: 2
+[MASTER] worker pid 6916 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:38:01.165Z
+	WPID: 6916
+	HEADER: range:bytes=0-3145727
+	HEADER: if-range:W/"dc989b-179c1599fca"
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[TRACK] code: F4neLJQC1_E
+[TRACK] path: ./tracks/youtube=F4neLJQC1_E.mp3
+[TRACK] done true
+[TRACK] Error: Request aborted
+[TRACK] code: F4neLJQC1_E
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:38:01.204Z
+	WPID: 6916
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[TRACK] platform: youtube
+[TRACK] path: ./tracks/youtube=F4neLJQC1_E.mp3
+[TRACK] done true
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:38:01.230Z
+	WPID: 6916
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	HEADER: range:bytes=3211264-
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[TRACK] done true
+[TRACK] code: F4neLJQC1_E
+[TRACK] path: ./tracks/youtube=F4neLJQC1_E.mp3
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:38:27.547Z
+	WPID: 6916
+	HEADER: range:bytes=0-3211263
+	HEADER: if-range:W/"dc989b-179c1599fca"
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: F4neLJQC1_E
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[TRACK] path: ./tracks/youtube=F4neLJQC1_E.mp3
+[TRACK] done true
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:38:27.572Z
+	WPID: 6916
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] code: F4neLJQC1_E
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[TRACK] path: ./tracks/youtube=F4neLJQC1_E.mp3
+[TRACK] done true
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::1 | TIME: 2021-05-31T07:38:27.593Z
+	WPID: 6916
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	HEADER: range:bytes=3276800-
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[TRACK] platform: youtube
+[TRACK] url: https://www.youtube.com/watch?v=F4neLJQC1_E
+[TRACK] done true
+[TRACK] path: ./tracks/youtube=F4neLJQC1_E.mp3
+[TRACK] code: F4neLJQC1_E
+[TRACK] RangeNotSatisfiableError: Range Not Satisfiable
+[MASTER] time: Mon May 31 2021 09:46:33 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] worker count: 2
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] pid: 11120
+[MASTER] worker pid 5296 forked
+[MASTER] worker pid 24280 forked
+[MASTER] time: Mon May 31 2021 09:48:59 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 26492
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 1944 forked
+[MASTER] worker count: 2
+[MASTER] worker pid 11516 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:49:08.586Z
+	WPID: 1944
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:49:08.642Z
+	WPID: 1944
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	HEADER: range:bytes=0-
+	HEADER: if-none-match:W/"0-179c165db6e"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:49:08 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[GC] starting
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:49:17.463Z
+	WPID: 1944
+	HEADER: if-none-match:W/"0-179c165db6e"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:49:08 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] Error: Request aborted
+[GC] starting
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:49:22.791Z
+	WPID: 1944
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:49:24.039Z
+	WPID: 1944
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:49:25.240Z
+	WPID: 1944
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:49:26.415Z
+	WPID: 1944
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:49:27.655Z
+	WPID: 1944
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:49:28.799Z
+	WPID: 1944
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:49:29.991Z
+	WPID: 1944
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:49:31.175Z
+	WPID: 1944
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:49:32.359Z
+	WPID: 1944
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:49:33.471Z
+	WPID: 1944
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] Error: Request aborted
+[GC] starting
+[MASTER] time: Mon May 31 2021 09:54:10 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 10836
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 5928 forked
+[MASTER] worker pid 28152 forked
+[MASTER] worker count: 2
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:54:21.817Z
+	WPID: 5928
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] Error: Request aborted
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:54:21.850Z
+	WPID: 28152
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	HEADER: range:bytes=0-
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[GC] starting
+[GC] 18098487B out of 5000000B
+[GC] starting
+[GC] 18098487B out of 5000000B
+[MASTER] time: Mon May 31 2021 09:55:43 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 9440
+[MASTER] worker count: 2
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 24932 forked
+[MASTER] worker pid 14192 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:55:43.809Z
+	WPID: 24932
+	HEADER: range:bytes=0-1048575
+	HEADER: if-none-match:W/"37909c-179c165e2d9"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:49:10 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:55:43.831Z
+	WPID: 24932
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	HEADER: range:bytes=0-1048575
+	HEADER: if-none-match:W/"37909c-179c165e2d9"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:49:10 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[GC] starting
+[GC] youtube=BhMC23ll2Rk.mp3: of 3641500B
+[GC] youtube=F4neLJQC1_E.mp3: of 14456987B
+[GC] 18098487B out of 5000000B
+[MASTER] time: Mon May 31 2021 09:58:14 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 17604
+[MASTER] worker count: 2
+[MASTER] worker pid 16296 forked
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 16608 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:58:15.913Z
+	WPID: 16608
+	HEADER: range:bytes=0-1048575
+	HEADER: if-none-match:W/"37909c-179c165e2d9"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:49:10 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[GC] starting
+[GC] youtube=F4neLJQC1_E.mp3: of 14456987 B
+[GC] youtube=BhMC23ll2Rk.mp3: of 3641500 B
+[GC] 18098487 B out of 5000000 B
+[MASTER] time: Mon May 31 2021 09:58:33 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] pid: 25172
+[MASTER] worker count: 2
+[MASTER] worker pid 15604 forked
+[MASTER] worker pid 19940 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:58:42.395Z
+	WPID: 15604
+	HEADER: range:bytes=0-1048575
+	HEADER: if-none-match:W/"37909c-179c165e2d9"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:49:10 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[GC] starting
+[GC] youtube=BhMC23ll2Rk.mp3: of 3641500 B
+[GC] youtube=F4neLJQC1_E.mp3: of 14456987 B
+[GC] 18098487 B out of 5000000 B
+[MASTER] time: Mon May 31 2021 09:59:17 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 25280
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker count: 2
+[MASTER] worker pid 9940 forked
+[MASTER] worker pid 20260 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T07:59:18.456Z
+	WPID: 9940
+	HEADER: range:bytes=0-1048575
+	HEADER: if-none-match:W/"37909c-179c165e2d9"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:49:10 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[GC] starting
+[GC] youtube=BhMC23ll2Rk.mp3: of 3641500 B (Mon May 31 2021 09:49:10 GMT+0200 (Ora legale dell’Europa centrale))
+[GC] 18098487 B out of 5000000 B
+[GC] youtube=F4neLJQC1_E.mp3: of 14456987 B (Mon May 31 2021 09:38:31 GMT+0200 (Ora legale dell’Europa centrale))
+[MASTER] time: Mon May 31 2021 10:03:55 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 19552
+[MASTER] worker count: 2
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 27368 forked
+[MASTER] worker pid 20020 forked
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T08:03:55.750Z
+	WPID: 20020
+	HEADER: range:bytes=0-1048575
+	HEADER: if-none-match:W/"37909c-179c165e2d9"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:49:10 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::1 | TIME: 2021-05-31T08:03:55.779Z
+	WPID: 20020
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	HEADER: range:bytes=1081344-2097151
+	HEADER: if-none-match:W/"37909c-179c165e2d9"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:49:10 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[GC] starting
+[GC] 0 B out of 5000000 B
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
+	FROM: ::ffff:127.0.0.1 | TIME: 2021-05-31T08:04:10.965Z
+	WPID: 20020
+	HEADER: range:bytes=0-1048575
+	HEADER: if-none-match:W/"37909c-179c165e2d9"
+	HEADER: if-modified-since:Mon, 31 May 2021 07:49:10 GMT
+	QUERY: {"t_plat":"youtube","t_code":"BhMC23ll2Rk"}
+	BODY: {}
+[TRACK] RangeNotSatisfiableError: Range Not Satisfiable
+[GC] starting
+[GC] 3641500 B out of 5000000 B
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::ffff:127.0.0.1 | TIME: 2021-05-31T08:04:32.995Z
+	WPID: 20020
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	FROM: ::ffff:127.0.0.1 | TIME: 2021-05-31T08:04:33.016Z
+	WPID: 20020
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=F4neLJQC1_E
+	HEADER: range:bytes=0-
+	HEADER: if-none-match:W/"0-179c173f665"
+	HEADER: if-modified-since:Mon, 31 May 2021 08:04:32 GMT
+	QUERY: {"t_plat":"youtube","t_code":"F4neLJQC1_E"}
+	BODY: {}
+[GC] starting
+[GC] 3641500 B out of 5000000 B
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	FROM: ::1 | TIME: 2021-05-31T08:05:10.353Z
+	WPID: 20020
+	QUERY: {"t_plat":"youtube","t_code":"Dwzk-XZxZ4k"}
+	BODY: {}
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	FROM: ::1 | TIME: 2021-05-31T08:05:10.370Z
+	WPID: 20020
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	HEADER: range:bytes=0-
+	HEADER: if-none-match:W/"0-179c1748853"
+	HEADER: if-modified-since:Mon, 31 May 2021 08:05:10 GMT
+	QUERY: {"t_plat":"youtube","t_code":"Dwzk-XZxZ4k"}
+	BODY: {}
+[GC] starting
+[GC] 3641500 B out of 5000000 B
+[MASTER] time: Mon May 31 2021 10:05:42 GMT+0200 (Ora legale dell’Europa centrale)
+[MASTER] pid: 11656
+[MASTER] http://localhost:3001/music-downloader
+[MASTER] worker pid 21352 forked
+[MASTER] worker pid 4268 forked
+[MASTER] worker count: 2
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	FROM: ::1 | TIME: 2021-05-31T08:05:45.016Z
+	WPID: 4268
+	HEADER: if-none-match:W/"0-179c1748853"
+	HEADER: if-modified-since:Mon, 31 May 2021 08:05:10 GMT
+	QUERY: {"t_plat":"youtube","t_code":"Dwzk-XZxZ4k"}
+	BODY: {}
+[WORKER] GET /music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	FROM: ::1 | TIME: 2021-05-31T08:05:45.057Z
+	WPID: 4268
+	HEADER: referer:http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=Dwzk-XZxZ4k
+	HEADER: range:bytes=0-
+	HEADER: if-none-match:W/"0-179c1750fbc"
+	HEADER: if-modified-since:Mon, 31 May 2021 08:05:45 GMT
+	QUERY: {"t_plat":"youtube","t_code":"Dwzk-XZxZ4k"}
+	BODY: {}
+[GC] starting
+[GC] youtube=BhMC23ll2Rk.mp3 deleted
+[GC] 2691975 B out of 5000000 B

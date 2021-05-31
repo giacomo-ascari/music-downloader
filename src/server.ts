@@ -1,12 +1,22 @@
 // IMPORTS
 import express from "express";
 import config from './config.json';
-import router, { init } from './router';
+import router from './router';
 import cluster from "cluster";
 import log from "./utils/log";
 import http from 'http';
 import os from 'os';
 import * as dotenv from 'dotenv';
+
+/* .env
+BASE_URL="/music-downloader"
+PORT=XXXX
+WORKERS_DEFAULT=XXXX
+WORKER_FROM_CORES="XXXX"
+SPEC_FFMPEG="XXXX"
+FFMPEG="C:/..."
+SIZE=XXXXX
+*/
 
 async function main() {
     
@@ -18,11 +28,11 @@ async function main() {
         
         // SOME DATA TO CALC 'N SHOW
         let date: Date = new Date();
-        let workers_count: number = (config.workers_from_cores ? os.cpus().length : config.workers_default);
+        let workers_count: number = (process.env.WORKER_FROM_CORES == "true" ? os.cpus().length : process.env.WORKERS_DEFAULT as unknown as number);
         log("master", `time: ${date}`, "s");
         log("master", `pid: ${process.pid}`, "s");
         log("master", `worker count: ${workers_count}`, "s");
-        log("master", `http://localhost:${config.port}${config.base_url}`, "s");
+        log("master", `http://localhost:${process.env.PORT}${config.base_url}`, "s");
     
         // EVENT HANDLING OF THE WORKER
         cluster.on('fork', (worker) => {
@@ -34,9 +44,8 @@ async function main() {
         });
     
         // WORKER FORKING
-        for (var i = 0; i < workers_count; i++) {
+        for (var i = 0; i < workers_count; i++)
             cluster.fork();
-        }
     
     } else if (cluster.isWorker) {
         
@@ -52,13 +61,10 @@ async function main() {
         })
 
         // CREATE AN APP, WHICH HANDLES REQ/RES WITH AN EXPRESS ROUTER
-        let init_result = await router.init();
-        if (init_result)
-            process.exit()
-        app.use(config.base_url, router.router as express.Router);
+        app.use(config.base_url, router as express.Router);
     
         let server: http.Server = http.createServer(app)
-        server.listen(config.port)
+        server.listen(process.env.PORT)
     }
 }
 

@@ -1,8 +1,5 @@
 {
     "base_url": "/music-downloader",
-    "port":3001,
-    "workers_default":2,
-    "workers_from_cores": false,
     "ignorable_headers": [
         "user-agent",
         "accept",
@@ -32,8 +29,6 @@
     },
     "tracks": {
         "folder":"./tracks",
-        "format":"mp3",
-        "spec_ffmpeg": true,
-        "ffmpeg":"C:/FFmpeg/bin/ffmpeg.exe"
+        "format":"mp3"
     }
 }
