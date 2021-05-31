@@ -17,5 +17,5 @@ function painter(h: string, f: string) {
 
 export default function log(h: string, s: string, f: string ="n") {
     console.log(`${painter(`[${h.toUpperCase()}]`, f)} ${s}`)
-    fs.appendFile('log.txt', `[${h.toUpperCase()}] ${s}\n`, (err) => {})
+    //fs.appendFile('log.txt', `[${h.toUpperCase()}] ${s}\n`, (err) => {})
 }

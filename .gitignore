@@ -2,6 +2,7 @@
 js/
 tracks/
 *.env
+log.txt
 
 # Logs
 logs
