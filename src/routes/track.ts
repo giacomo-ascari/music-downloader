@@ -22,6 +22,7 @@ function removeOldTracks() {
         return (x_stats < y_stats) ? 1 : -1;
     })
     files.forEach(file => { total += fs.statSync(`${config.tracks.folder}/${file}`).size; });
+    log("gc", `${total} occupied`, "d");
     while (total > max_size) {
         let file = files.pop();
         total -= fs.statSync(`${config.tracks.folder}/${file}`).size;
