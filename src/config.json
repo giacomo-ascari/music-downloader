@@ -1,5 +1,6 @@
 {
     "base_url": "/music-downloader",
+    "public_folder": "public",
     "ignorable_headers": [
         "user-agent",
         "accept",

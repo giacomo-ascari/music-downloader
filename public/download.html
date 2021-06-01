@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Giacomo Ascari">
+    <title>music-downloader</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="grid.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+
+    <script>
+
+      let list = [];
+
+      function input_div(element) {
+        let div = document.createElement("div");
+        div.className = "col";
+        div.appendChild(element);
+        return div;
+      }
+
+      function update_label(index) {
+        let artist = document.getElementById(`artist_in_${index}`).value;
+        let title = document.getElementById(`title_in_${index}`).value;
+        document.getElementById(`label_${index}`).innerHTML = `${artist} - ${title}.mp3`;
+      }
+
+      function dyn_div_form(plat, code, artist, title) {
+
+        let index = list.length
+        list.push({plat, code})
+
+        let main_div = document.createElement("div");
+        main_div.className = "container themed-container";
+        let form = document.createElement("form");
+        let div = document.createElement("div");
+        div.className = "row";
+
+        let artist_in = document.createElement("input");
+        artist_in.className = "form-control";
+        artist_in.value = artist;
+        artist_in.id = `artist_in_${index}`
+        artist_in.type = "text";
+        artist_in.placeholder = "Artist";
+        artist_in.oninput = () => { update_label(index) };
+        div.appendChild(input_div(artist_in));
+
+        let title_in = document.createElement("input");
+        title_in.className = "form-control";
+        title_in.value = title;
+        title_in.id = `title_in_${index}`
+        title_in.type = "text";
+        title_in.placeholder = "Title";
+        title_in.oninput = () => { update_label(index) };
+        div.appendChild(input_div(title_in));
+
+        let submit = document.createElement("input");
+        submit.className = "form-control btn btn-primary";
+        submit.type = "button";
+        submit.value = "Download (.mp3)"
+        submit.onclick = () => { download(index) }
+        div.appendChild(input_div(submit));
+
+        let label = document.createElement("i");
+        label.id = `label_${index}`;
+        
+        form.appendChild(div);
+        main_div.appendChild(form);
+        main_div.appendChild(label);
+        document.getElementById("dyn_forms").appendChild(main_div);
+        update_label(index);
+      }
+
+      function init () {
+        let url = new URL(window.location.href)
+        let plat = url.search.split("t_plat=")[1].split("&")[0];
+        let code = url.search.split("t_code=")[1].split("&")[0];
+        let mode = url.search.split("mode=")[1].split("&")[0];
+        document.getElementById("t_plat").value = plat;
+        document.getElementById("t_code").value = code;
+        var xmlHttp = new XMLHttpRequest();
+        if (mode == "t") {
+          xmlHttp.open("GET", `https://asky.hopto.org/music-downloader/info?t_plat=${plat}&t_code=${code}`, false);
+          xmlHttp.send(null);
+          if (xmlHttp.status == 200) {
+            info = JSON.parse(xmlHttp.responseText).info;
+            dyn_div_form(plat, code, info.mediaArtist ? info.mediaArtist : info.author, info.mediaSong ? info.mediaSong : info.title)
+          } else {
+            alert("ERROR");
+          }
+        } else if (mode == "p") {
+          console.log(code + " --- " + mode);
+          xmlHttp.open("GET", `https://asky.hopto.org/music-downloader/info-pl?t_plat=${plat}&t_code=${code}`, false);
+          xmlHttp.send(null);
+          if (xmlHttp.status == 200) {
+            info = JSON.parse(xmlHttp.responseText).info;
+            info.items.forEach(item => {
+              console.log(item);
+              dyn_div_form(plat, item.code, info.title, item.title)
+            });
+          } else {
+            alert("ERROR");
+          }
+        } else {
+          alert("ERROR");
+        }
+         
+      }
+
+      function download(index) {
+        try {
+          let artist = document.getElementById(`artist_in_${index}`).value;
+          let title = document.getElementById(`title_in_${index}`).value;
+          let plat = list[index].plat;
+          let code = list[index].code;
+          //let url = new URL(`http://localhost:3001/music-downloader/track?t_plat=${plat}&t_code=${code}`);
+          let url = new URL(`https://asky.hopto.org/music-downloader/track?t_plat=${plat}&t_code=${code}`);
+          var element = document.createElement('a');
+          element.style.display = 'none';
+          element.href = url;
+          element.download = `${artist} - ${title}.mp3`;
+          element.target="_blank"
+          document.body.appendChild(element);
+          element.click();
+          document.body.removeChild(element);
+          return true;
+        } catch {
+          return false;
+        }
+      }
+      
+    </script>
+    
+  </head>
+  <body class="py-4" onload="init()">
+    
+<main>
+  <div class="container">
+
+    <h1 class="mt-4">Download</h1>
+    <div class="container themed-container">
+      <form id="form">
+        <fieldset disabled="disabled">
+          <input class="form-control" type="text" id="t_plat" name="t_plat"><br>
+          <input class="form-control" type="text" id="t_code" name="t_code">
+        </fieldset>
+      </form>
+    </div>
+    <hr>
+    <div id="dyn_forms"></div>
+
+  </body>
+</html>

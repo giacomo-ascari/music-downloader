@@ -30,7 +30,7 @@ router.use((req: express.Request, res: express.Response, next: express.NextFunct
 });
 
 // TEST
-router.get("/", async (req: express.Request, res: express.Response) => {
+router.get("/test", async (req: express.Request, res: express.Response) => {
     log("worker", "beginning testing", "d");
     await delay(100);
     log("worker", "finishing testing", "d");
@@ -45,5 +45,6 @@ router.use(info_pl);
 router.use(info);
 router.use(track);
 
+router.use("", express.static("public"));
 
 export default router;

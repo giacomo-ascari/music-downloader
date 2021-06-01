@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Giacomo Ascari">
+    <title>music-downloader</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="grid.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <script>
+
+      let plat, code;
+
+      function download() {
+        try {
+          let url = new URL(document.getElementById("t_url").value)
+          if (url.href.search("youtube")) {
+            document.getElementById("t_plat").value = "youtube";
+            if (document.getElementById("mode_t").checked) {
+              document.getElementById("t_code").value = url.href.split("v=")[1].split("&")[0];
+            } else if (document.getElementById("mode_p").checked) {
+              document.getElementById("t_code").value = url.href.split("list=")[1].split("&")[0];
+            } else {
+              return false;
+            }
+            return true;
+          }
+          return false;
+        } catch {
+          return false;
+        }
+      }
+      
+    </script>
+    
+  </head>
+  <body class="py-4">
+    
+<main>
+  <div class="container">
+
+    <h1>Music Downloader</h1>
+    <p class="lead">Download you favourite music safely, without ads, cookies and invasive banners.</p>
+    <p>In these page you can freely experiment with music-downloader API, accessible everywhere and freely. Documentation will be soon produced.</p>
+    
+    <h2 class="mt-4">Download track/playlist</h2>
+    <p>Download a track/playlist using its URL. This form will redirect you to a new page where you can customize the details, such as title and author's name.</p>
+    <div class="container themed-container">
+      <form action="download.html" method="GET" onsubmit="download()">
+        <input class="form-control" type="text" id="t_url" value="" placeholder="URL"><br>
+        <input class="form-check-input" type="radio" id="mode_t" name="mode" value="t" checked><label for="mode_t" class="form-check-label">Track</label><br>
+        <input class="form-check-input" type="radio" id="mode_p" name="mode" value="p"><label for="mode_p" class="form-check-label">Playlist</label><br><br>
+        <input class="form-control btn btn-primary" type="submit" value="Download">
+        <input type="hidden" id="t_plat" name="t_plat" value="">
+        <input type="hidden" id="t_code" name="t_code" value="">
+      </form>
+    </div>
+
+  </body>
+</html>
