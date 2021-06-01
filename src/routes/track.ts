@@ -26,8 +26,9 @@ function removeOldTracks() {
     while (total > max_size) {
         let file = files.pop();
         total -= fs.statSync(`${config.tracks.folder}/${file}`).size;
-        fs.rmSync(`${config.tracks.folder}/${file}`);
-        log("gc", `${file} deleted`, "d");
+        fs.rm(`${config.tracks.folder}/${file}`, () => {
+            log("gc", `${file} deleted`, "d");
+        });
     }    
 }
 
@@ -65,6 +66,7 @@ router.get("/track", async (req: express.Request, res: express.Response) => {
                 log("track", `sending file`, "d");
                 res.sendFile(path, {root: "./"}, (err) => {
                     log("track", `sent`, "d");
+                    fs.utimesSync(path, new Date(), new Date());
                     gc = setTimeout(removeOldTracks, 5000);
                 });
                 
