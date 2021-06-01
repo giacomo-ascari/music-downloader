@@ -36,21 +36,31 @@
       function download() {
         try {
           let url = new URL(document.getElementById("t_url").value)
-          if (url.href.search("youtube")) {
+          console.log(url.href);
+          if (url.href.includes("youtube")) {
+            console.log("YOUTUBE")
             document.getElementById("t_plat").value = "youtube";
             if (document.getElementById("mode_t").checked) {
               document.getElementById("t_code").value = url.href.split("v=")[1].split("&")[0];
+              return true;
             } else if (document.getElementById("mode_p").checked) {
               document.getElementById("t_code").value = url.href.split("list=")[1].split("&")[0];
-            } else {
-              return false;
-            }
-            return true;
+              return true;
+            }            
+          } else if (url.href.includes("youtu.be")) {
+            console.log("YOUTU.BE")
+            document.getElementById("t_plat").value = "youtube";
+            if (document.getElementById("mode_t").checked) {
+              let s = url.href.split("/")
+              console.log(s)
+              document.getElementById("t_code").value = s[s.length-1];
+              return true;
+            }            
           }
-          return false;
         } catch {
           return false;
         }
+        return false;
       }
       
     </script>
