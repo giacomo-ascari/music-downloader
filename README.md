@@ -19,6 +19,8 @@ PORT=XXXX
 WORKERS_DEFAULT=XXXX
 WORKER_FROM_CORES="XXXX"
 SIZE_MB=XXXXX
+FFMPEG_SPECIFY="XXXX"
+FFMPEG_PATH="XXXX"
 ```
 Example (literally what I use):
 ```
@@ -27,6 +29,8 @@ PORT=3001
 WORKERS_DEFAULT=2
 WORKER_FROM_CORES="true"
 SIZE_MB=500
+FFMPEG_SPECIFY="true"
+FFMPEG_PATH="C:/FFmpeg/bin/ffmpeg.exe"
 ```
 
 ## Supported platforms

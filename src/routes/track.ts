@@ -6,12 +6,13 @@ import config from '../config.json';
 import express from "express";
 
 import ytdl from "ytdl-core";
+import ffmpeg from "fluent-ffmpeg";
 import fs from  'fs';
 
 // ROUTING STUFF
 let router: express.Router = express.Router();
 
-let gc: NodeJS.Timeout;
+/*let gc: NodeJS.Timeout;
 function removeOldTracks() {
     let files = fs.readdirSync(config.tracks.folder);
     let total = 0;
@@ -30,13 +31,13 @@ function removeOldTracks() {
             log("gc", `${file} deleted`, "d");
         });
     }    
-}
+}*/
 
 //http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
 router.get("/track", async (req: express.Request, res: express.Response) => {
     try {
 
-        clearTimeout(gc);
+        //clearTimeout(gc);
 
         let platform = query_get(req, config.req_attr.track_platform);
         let code = query_get(req, config.req_attr.track_code);
@@ -50,13 +51,19 @@ router.get("/track", async (req: express.Request, res: express.Response) => {
                 if (platform in config.platforms && platform == "youtube") {
                     log("track", `starting download`, "d");
                     let url = (config.platforms[platform] as string).replace("$", code);
-                    ytdl(url, {filter: "audioonly"}).pipe(fs.createWriteStream(path)).on("finish", () => {
-                        log("track", `ending download and sending`, "d");
+                    let stream = ytdl(url, {filter: "audioonly"});
+                    let proc = ffmpeg({source: stream});
+                    if (process.env.FFMPEG_SPECIFY == "true" && process.env.FFMPEG_PATH)
+                        proc.setFfmpegPath(process.env.FFMPEG_PATH);
+                    proc.on("error", (err) => { throw new Error(err); });
+                    proc.on("end", () => {
                         res.sendFile(path, {root: "./"}, (err) => {
                             log("track", `sent`, "d");
-                            gc = setTimeout(removeOldTracks, 5000);
+                            //gc = setTimeout(removeOldTracks, 5000);
                         });
                     });
+                    proc.saveToFile(path);
+
                 } else {
                     throw new Error();
                 }
@@ -67,7 +74,7 @@ router.get("/track", async (req: express.Request, res: express.Response) => {
                 res.sendFile(path, {root: "./"}, (err) => {
                     log("track", `sent`, "d");
                     fs.utimesSync(path, new Date(), new Date());
-                    gc = setTimeout(removeOldTracks, 5000);
+                    //gc = setTimeout(removeOldTracks, 5000);
                 });
                 
             }
