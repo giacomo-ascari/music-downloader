@@ -8,14 +8,6 @@ import http from 'http';
 import os from 'os';
 import * as dotenv from 'dotenv';
 
-/* .env
-BASE_URL="/music-downloader"
-PORT=XXXX
-WORKERS_DEFAULT=XXXX
-WORKER_FROM_CORES="XXXX"
-SIZE_MB=XXXXX
-*/
-
 async function main() {
     
     // CLUSTER GENERATION AND MANAGEMENT
