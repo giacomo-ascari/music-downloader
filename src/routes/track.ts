@@ -6,7 +6,6 @@ import config from '../config.json';
 import express from "express";
 
 import ytdl from "ytdl-core";
-import ffmpeg from "fluent-ffmpeg";
 import fs from  'fs';
 
 // ROUTING STUFF
@@ -43,22 +42,41 @@ router.get("/track", async (req: express.Request, res: express.Response) => {
         let code = query_get(req, config.req_attr.track_code);
         if (platform && code) {
 
+            let temp_path = path_get(platform, code, config.tracks.folder, config.tracks.temp_f);
             let path = path_get(platform, code, config.tracks.folder, config.tracks.format);
             if (!fs.existsSync(config.tracks.folder)) fs.mkdirSync(config.tracks.folder)
 
             if (!fs.existsSync(path)) {
-
+                
                 if (platform in config.platforms && platform == "youtube") {
                     log("track", `starting download`, "d");
+                    let url = (config.platforms[platform] as string).replace("$", code);
+                    ytdl(url, {filter: "audioonly"}).pipe(fs.createWriteStream(temp_path)).on("finish", () => {
+                        fs.renameSync(temp_path, path);
+                        res.sendFile(path, {root: "./"}, (err) => {
+                            log("track", `sent`, "d");
+                            //gc = setTimeout(removeOldTracks, 5000);
+                        });
+                    })
+                    
+                } else {
+                    throw new Error();
+                }
+
+                /*if (platform in config.platforms && platform == "youtube") {
+                    log("track", `starting download`, "d");
+                    log("time", `${new Date()}`, "d");
                     let url = (config.platforms[platform] as string).replace("$", code);
                     let stream = ytdl(url, {filter: "audioonly"});
                     let proc = ffmpeg({source: stream});
                     if (process.env.FFMPEG_SPECIFY == "true" && process.env.FFMPEG_PATH)
                         proc.setFfmpegPath(process.env.FFMPEG_PATH);
                     proc.on("error", (err) => { throw new Error(err); });
+                    proc.on("progress", (val) => { console.log(val.timemark) });
                     proc.on("end", () => {
                         res.sendFile(path, {root: "./"}, (err) => {
                             log("track", `sent`, "d");
+                            log("time", `${new Date()}`, "d");
                             //gc = setTimeout(removeOldTracks, 5000);
                         });
                     });
@@ -66,7 +84,7 @@ router.get("/track", async (req: express.Request, res: express.Response) => {
 
                 } else {
                     throw new Error();
-                }
+                }*/
                 
             } else {
 

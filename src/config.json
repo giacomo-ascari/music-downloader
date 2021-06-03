@@ -29,6 +29,7 @@
     },
     "tracks": {
         "folder":"./tracks",
-        "format":"mp3"
+        "format":"webm",
+        "temp_f":"temp"
     }
 }

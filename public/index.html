@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Giacomo Ascari">
-    <title>music-downloader</title>
+    <title>Music Downloader</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
@@ -29,42 +29,8 @@
       }
     </style>
 
-    <script>
+    <script type="text/javascript" src="script.js"></script>   
 
-      let plat, code;
-
-      function download() {
-        try {
-          let url = new URL(document.getElementById("t_url").value)
-          console.log(url.href);
-          if (url.href.includes("youtube")) {
-            console.log("YOUTUBE")
-            document.getElementById("t_plat").value = "youtube";
-            if (document.getElementById("mode_t").checked) {
-              document.getElementById("t_code").value = url.href.split("v=")[1].split("&")[0];
-              return true;
-            } else if (document.getElementById("mode_p").checked) {
-              document.getElementById("t_code").value = url.href.split("list=")[1].split("&")[0];
-              return true;
-            }            
-          } else if (url.href.includes("youtu.be")) {
-            console.log("YOUTU.BE")
-            document.getElementById("t_plat").value = "youtube";
-            if (document.getElementById("mode_t").checked) {
-              let s = url.href.split("/")
-              console.log(s)
-              document.getElementById("t_code").value = s[s.length-1];
-              return true;
-            }            
-          }
-        } catch {
-          return false;
-        }
-        return false;
-      }
-      
-    </script>
-    
   </head>
   <body class="py-4">
     
@@ -74,19 +40,21 @@
     <h1>Music Downloader</h1>
     <p class="lead">Download you favourite music safely, without ads, cookies and invasive banners.</p>
     <p>In these page you can freely experiment with music-downloader API, accessible everywhere and freely. Documentation will be soon produced.</p>
+    <a href="https://github.com/giacomo-ascari/music-downloader">Git Repository</a>
     
     <h2 class="mt-4">Download track/playlist</h2>
-    <p>Download a track/playlist using its URL. This form will redirect you to a new page where you can customize the details, such as title and author's name.</p>
+    <p>Download a track/playlist using its URL. The resulting file format .WEBM. Despite being and uncommon name, it is the most mainstream music format on the web. It's already playable by every music player you use, but I personally recommend VLC Media Player.</p>
     <div class="container themed-container">
-      <form action="download.html" method="GET" onsubmit="download()">
-        <input class="form-control" type="text" id="t_url" value="" placeholder="URL"><br>
-        <input class="form-check-input" type="radio" id="mode_t" name="mode" value="t" checked><label for="mode_t" class="form-check-label">Track</label><br>
-        <input class="form-check-input" type="radio" id="mode_p" name="mode" value="p"><label for="mode_p" class="form-check-label">Playlist</label><br><br>
-        <input class="form-control btn btn-primary" type="submit" value="Download">
-        <input type="hidden" id="t_plat" name="t_plat" value="">
-        <input type="hidden" id="t_code" name="t_code" value="">
+      <form>
+        <input class="form-control" type="text" id="input_url" value="" placeholder="URL"><br>
+        <input class="form-check-input" type="radio" id="input_mode_t" name="input_mode" value="t" checked="checked"><label for="input_mode_t" class="form-check-label">Track</label><br>
+        <input class="form-check-input" type="radio" id="input_mode_p" name="input_mode" value="p"><label for="input_mode_p" class="form-check-label">Playlist</label><br><br>
+        <input class="form-control btn btn-primary" type="button" value="Add to queue" onclick="add_to_queue()">
       </form>
     </div>
+
+    <hr>
+    <div id="dyn_forms"></div>
 
   </body>
 </html>
