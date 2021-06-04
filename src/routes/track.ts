@@ -6,7 +6,11 @@ import config from '../config.json';
 import express from "express";
 
 import ytdl from "ytdl-core";
+import util from "util";
+import {exec as _exec} from "child_process";
 import fs from  'fs';
+
+const exec = util.promisify(_exec);
 
 // ROUTING STUFF
 let router: express.Router = express.Router();
@@ -32,75 +36,72 @@ function removeOldTracks() {
     }    
 }*/
 
-//http://localhost:3001/music-downloader/track?t_plat=youtube&t_code=BhMC23ll2Rk
-router.get("/track", async (req: express.Request, res: express.Response) => {
+router.get("/retrieve", async (req: express.Request, res: express.Response) => {
     try {
-
-        //clearTimeout(gc);
 
         let platform = query_get(req, config.req_attr.track_platform);
         let code = query_get(req, config.req_attr.track_code);
         if (platform && code) {
 
-            let temp_path = path_get(platform, code, config.tracks.folder, config.tracks.temp_f);
             let path = path_get(platform, code, config.tracks.folder, config.tracks.format);
             if (!fs.existsSync(config.tracks.folder)) fs.mkdirSync(config.tracks.folder)
 
             if (!fs.existsSync(path)) {
                 
+                log("track", `starting retrieve...`, "d");
+
                 if (platform in config.platforms && platform == "youtube") {
-                    log("track", `starting download`, "d");
-                    let url = (config.platforms[platform] as string).replace("$", code);
-                    ytdl(url, {filter: "audioonly"}).pipe(fs.createWriteStream(temp_path)).on("finish", () => {
-                        fs.renameSync(temp_path, path);
-                        res.sendFile(path, {root: "./"}, (err) => {
-                            log("track", `sent`, "d");
-                            //gc = setTimeout(removeOldTracks, 5000);
-                        });
+                    let temp_path = path_get(platform, code, config.tracks.folder, config.platforms[platform].format);
+                    let url = (config.platforms[platform].url as string).replace("$", code);
+
+                    ytdl(url, {filter: "audioonly", quality:"highestaudio"}).pipe(fs.createWriteStream(temp_path)).on("finish", async () => {
+                        if (!process.env.FFMPEG_CMD ) throw new Error();
+                        log("track", `converting...`, "d");
+                        let command = process.env.FFMPEG_CMD.replace("?0", temp_path).replace("?1", path);
+                        const { stdout, stderr } = await exec(command);
+                        //log("exec", `stdout: ${stdout}`, "w");
+                        //log("exec", `stderr: ${stderr}`, "w");
+                        //fs.renameSync(temp_path, path);
+                        res.status(200).send("ok");
+                        log("track", `done`, "d");
                     })
-                    
                 } else {
                     throw new Error();
                 }
-
-                /*if (platform in config.platforms && platform == "youtube") {
-                    log("track", `starting download`, "d");
-                    log("time", `${new Date()}`, "d");
-                    let url = (config.platforms[platform] as string).replace("$", code);
-                    let stream = ytdl(url, {filter: "audioonly"});
-                    let proc = ffmpeg({source: stream});
-                    if (process.env.FFMPEG_SPECIFY == "true" && process.env.FFMPEG_PATH)
-                        proc.setFfmpegPath(process.env.FFMPEG_PATH);
-                    proc.on("error", (err) => { throw new Error(err); });
-                    proc.on("progress", (val) => { console.log(val.timemark) });
-                    proc.on("end", () => {
-                        res.sendFile(path, {root: "./"}, (err) => {
-                            log("track", `sent`, "d");
-                            log("time", `${new Date()}`, "d");
-                            //gc = setTimeout(removeOldTracks, 5000);
-                        });
-                    });
-                    proc.saveToFile(path);
-
-                } else {
-                    throw new Error();
-                }*/
-                
             } else {
+                res.status(200).send("ok");
+            }
 
-                log("track", `sending file`, "d");
+        } else {
+            res.status(500).send("Error");
+        }
+        
+    } catch (exc) {
+        res.status(500).send("Error");
+    }
+});
+
+//http://localhost:3001/music-downloader/download?t_plat=youtube&t_code=BhMC23ll2Rk
+router.get("/download", async (req: express.Request, res: express.Response) => {
+    try {
+        //clearTimeout(gc);
+        let platform = query_get(req, config.req_attr.track_platform);
+        let code = query_get(req, config.req_attr.track_code);
+        if (platform && code) {
+            let path = path_get(platform, code, config.tracks.folder, config.tracks.format);
+            if (!fs.existsSync(config.tracks.folder)) fs.mkdirSync(config.tracks.folder)
+            if (fs.existsSync(path)) {
                 res.sendFile(path, {root: "./"}, (err) => {
-                    log("track", `sent`, "d");
-                    fs.utimesSync(path, new Date(), new Date());
                     //gc = setTimeout(removeOldTracks, 5000);
                 });
-                
+            } else {
+                res.status(404).send("not found");
             }
         } else {
-            res.status(500).send("Unsupported platform");
+            res.status(500).send("Error");
         }
     } catch (exc) {
-        res.status(500).send("Generic exception");
+        res.status(500).send("Error");
     }
 });
 

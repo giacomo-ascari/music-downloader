@@ -21,7 +21,7 @@ router.get("/info", async (req: express.Request, res: express.Response) => {
             
             let info, raw;
             if (platform in config.platforms && platform == "youtube") {
-                let url = (config.platforms[platform] as string).replace("$", code);
+                let url = (config.platforms[platform].url as string).replace("$", code);
                 raw = await ytdl.getBasicInfo(url);
                 info = {
                     title: raw.videoDetails.title,

@@ -21,7 +21,10 @@
         "cookie"
     ],
     "platforms": {
-        "youtube": "https://www.youtube.com/watch?v=$"
+        "youtube": {
+            "url":"https://www.youtube.com/watch?v=$",
+            "format":"webm"
+        }
     },
     "req_attr": {
         "track_code": "t_code",
@@ -29,7 +32,6 @@
     },
     "tracks": {
         "folder":"./tracks",
-        "format":"webm",
-        "temp_f":"temp"
+        "format":"mp3"
     }
 }

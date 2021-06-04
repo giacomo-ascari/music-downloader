@@ -1,12 +1,42 @@
 let queue = [];
+let base_url = "https://asky.hopto.org/music-downloader";
+//let base_url = "http://localhost:3001/music-downloader";
+
+function remove(index) {
+    document.getElementById(`main_div_${index}`).remove();
+}
+
+function retrieve(index) {
+    let button = document.getElementById(`download_${index}`);
+    button.disabled = true;
+    button.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>';
+    let plat = queue[index].plat;
+    let code = queue[index].code;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", `${base_url}/retrieve?t_plat=${plat}&t_code=${code}`, true);
+    xhr.onload = (e) => {
+        button.disabled = false;
+        if (xhr.status == 200) {
+            button.className = button.className.replace("btn-primary", "btn-success");
+            button.innerHTML = "READY!";
+            button.onclick = () => { download(index) }
+        } else {
+            button.innerHTML = "Download [.mp3]";
+        }
+    }
+    xhr.onerror = (e) => {
+        button.disabled = false;
+        button.innerHTML = "Download [.mp3]";
+    }
+    xhr.send(null);
+}
 
 function download(index) {
     document.getElementById(`download_${index}`).disabled = true;
     let filename = document.getElementById(`label_${index}`).innerHTML;
     let plat = queue[index].plat;
     let code = queue[index].code;
-    //let url = new URL(`http://localhost:3001/music-downloader/track?t_plat=${plat}&t_code=${code}`);
-    let url = new URL(`https://asky.hopto.org/music-downloader/track?t_plat=${plat}&t_code=${code}`);
+    let url = new URL(`${base_url}/download?t_plat=${plat}&t_code=${code}`);
     var element = document.createElement('a');
     element.style.display = 'none';
     element.href = url;
@@ -15,26 +45,26 @@ function download(index) {
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
-    setTimeout(() => { document.getElementById(`download_${index}`).disabled = false; }, 5000);
-  }
-
-function input_div(element) {
-    let div = document.createElement("div");
-    div.className = "col";
-    div.appendChild(element);
-    return div;
+    setTimeout(() => { document.getElementById(`download_${index}`).disabled = false; }, 1000);
 }
 
 function update_label(index) {
     let filename = document.getElementById(`filename_${index}`).value;
-    document.getElementById(`label_${index}`).innerHTML = `${filename}.webm`;
+    document.getElementById(`label_${index}`).innerHTML = `${filename}.mp3`;
+}
+
+function input_div(element, cls) {
+    let div = document.createElement("div");
+    div.className = cls;
+    div.appendChild(element);
+    return div;
 }
 
 function track_div(index) {
 
     let main_div = document.createElement("div");
     main_div.className = "container themed-container";
-    let form = document.createElement("form");
+    main_div.id = `main_div_${index}`;
     let div = document.createElement("div");
     div.className = "row";
 
@@ -45,23 +75,29 @@ function track_div(index) {
     filename_in.type = "text";
     filename_in.placeholder = "Filename";
     filename_in.oninput = () => { update_label(index) };
-    div.appendChild(input_div(filename_in));
+    div.appendChild(input_div(filename_in, "col"));
 
-    let submit = document.createElement("input");
+    let submit = document.createElement("button");
     submit.className = "form-control btn btn-primary";
-    submit.type = "button";
-    submit.value = "Download [.webm]"
+    submit.innerHTML = "Download [.mp3]"
     submit.id = `download_${index}`
-    submit.onclick = () => { download(index) }
-    div.appendChild(input_div(submit));
+    submit.onclick = () => { retrieve(index) }
+    div.appendChild(input_div(submit, "col"));
+
+    let rem = document.createElement("button");
+    rem.className = "btn btn-danger";
+    rem.innerHTML = "✖"
+    rem.id = `remove_${index}`
+    rem.onclick = () => { remove(index) }
+    div.appendChild(input_div(rem, "col-1"));
 
     let label = document.createElement("i");
     label.id = `label_${index}`;
     
-    form.appendChild(div);
-    main_div.appendChild(form);
+    main_div.appendChild(div);
     main_div.appendChild(label);
-    document.getElementById("dyn_forms").appendChild(main_div);
+    let dyn_forms = document.getElementById("dyn_forms");
+    dyn_forms.insertBefore(main_div, dyn_forms.firstChild);
     update_label(index);
 
 }
@@ -86,29 +122,35 @@ function add_to_queue() {
         code = s[s.length-1];
     }
 
-    var xmlHttp = new XMLHttpRequest();
+    var xhr = new XMLHttpRequest();
     if (mode == "t") {
-        xmlHttp.open("GET", `https://asky.hopto.org/music-downloader/info?t_plat=${plat}&t_code=${code}`, false);
-        xmlHttp.send(null);
-        if (xmlHttp.status == 200) {
-            info = JSON.parse(xmlHttp.responseText).info;
-            queue.push({plat, code, artist: (info.mediaArtist ? info.mediaArtist : info.author), title: (info.mediaSong ? info.mediaSong : info.title)});
-            track_div(queue.length-1);
-        } else {
-            alert("ERROR");
-        }
-    } else if (mode == "p") {
-        xmlHttp.open("GET", `https://asky.hopto.org/music-downloader/info-pl?t_plat=${plat}&t_code=${code}`, false);
-        xmlHttp.send(null);
-        if (xmlHttp.status == 200) {
-            info = JSON.parse(xmlHttp.responseText).info;
-            info.items.forEach(item => {
-                queue.push({plat, code: item.code, artist: info.artist, title: item.title});
+        xhr.open("GET", `${base_url}/info?t_plat=${plat}&t_code=${code}`, true);
+        xhr.onload = (e) => {
+            if (xhr.status == 200) {
+                console.log("hat")
+                info = JSON.parse(xhr.responseText).info;
+                queue.push({plat, code, artist: (info.mediaArtist ? info.mediaArtist : info.author), title: (info.mediaSong ? info.mediaSong : info.title)});
                 track_div(queue.length-1);
-            });
-        } else {
-            alert("ERROR");
+            } else {
+                alert("ERROR");
+            }
         }
+        xhr.send(null);
+    } else if (mode == "p") {
+        xhr.open("GET", `${base_url}/info-pl?t_plat=${plat}&t_code=${code}`, false);
+        xhr.onload = (e) => {
+            if (xhr.status == 200) {
+                info = JSON.parse(xhr.responseText).info;
+                info.items.forEach(item => {
+                    queue.push({plat, code: item.code, artist: info.artist, title: item.title});
+                    track_div(queue.length-1);
+                });
+            } else {
+                alert("ERROR");
+            }
+        }
+        xhr.send(null);
+
     } else {
         alert("ERROR");
     }
