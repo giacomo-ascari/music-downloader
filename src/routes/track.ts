@@ -63,6 +63,7 @@ router.get("/retrieve", async (req: express.Request, res: express.Response) => {
                         //log("exec", `stderr: ${stderr}`, "w");
                         //fs.renameSync(temp_path, path);
                         res.status(200).send("ok");
+                        fs.rmSync(temp_path);
                         log("track", `done`, "d");
                     })
                 } else {
