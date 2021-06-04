@@ -8,7 +8,7 @@ import express from "express";
 import ytdl from "ytdl-core";
 import util from "util";
 import {exec as _exec} from "child_process";
-import fs, { rmSync as _rmSync } from  'fs';
+import fs from  'fs';
 
 const exec = util.promisify(_exec);
 
@@ -63,7 +63,7 @@ router.get("/retrieve", async (req: express.Request, res: express.Response) => {
                         //log("exec", `stderr: ${stderr}`, "w");
                         //fs.renameSync(temp_path, path);
                         res.status(200).send("ok");
-                        _rmSync(temp_path);
+                        fs.rmSync(temp_path);
                         log("track", `done`, "d");
                     })
                 } else {

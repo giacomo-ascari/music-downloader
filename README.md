@@ -42,3 +42,7 @@ FFMPEG_CMD="C:/ffmpeg/bin/ffmpeg.exe -i ?0 ?1"
 
 ## Sample
 [https://asky.hopto.org/music-downloader](https://asky.hopto.org/music-downloader)
+
+## For me to remember:
+* First `docker compose up --build`
+* Then I don't know, I'm not arrived to that part yet.
