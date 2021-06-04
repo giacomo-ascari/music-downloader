@@ -40,5 +40,5 @@ FFMPEG_CMD="C:/ffmpeg/bin/ffmpeg.exe -i ?0 ?1"
 ## Supported platforms
 * YouTube `example: music-downloader/track?t_plat=youtube&t_code=dQw4w9WgXcQ`
 
-## Samples
-[https://asky.hopto.org/music-downloader/track?t_plat=youtube&t_code=dQw4w9WgXcQ](https://asky.hopto.org/music-downloader/track?t_plat=youtube&t_code=dQw4w9WgXcQ)
+## Sample
+[https://asky.hopto.org/music-downloader](https://asky.hopto.org/music-downloader)
